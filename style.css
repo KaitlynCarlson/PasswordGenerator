@@ -1,0 +1,25 @@
+body{
+    background-image: url(diagmonds/diagmonds.png);
+}
+.navbar{
+   justify-content: flex-start;
+   font-family: Courier New, monospace;
+   font-size: 50px;
+}
+img{
+    padding:9px;
+}
+.content{
+    margin-top:30px;
+    margin-bottom:30px;
+    background-color:darkcyan;
+    padding:40px;
+    width:100%;
+    color:white;
+    font-family: Courier New, monospace;
+    border-radius: 12%;
+}
+button{
+    color:white;
+    background-color:darkslategrey;
+}
