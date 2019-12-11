@@ -1,6 +1,6 @@
 
  
-
+function passwordGenerator(){
 
 /** Prompting user to input desirable password character length. Limited to a minimum of 8 characters 
  and a maximum of 128 characters. */
@@ -35,7 +35,7 @@ console.log(yourPasswordLowerCaseCharacters);
 var numericCharacters = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var lowerCaseCharacters = ["q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m"];
 var upperCaseCharacters = ["Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"];
-var specialCharacters = ["!", "@","#", "$"," %"," ^", " &"," *", " _", " + "];
+var specialCharacters = ["!", "@","#", "$"," %","^", "&","*", "_", "+"];
 var password = "";
 var generator = [];
 
@@ -57,7 +57,9 @@ if (yourPasswordLowerCaseCharacters === true) {
     generator = generator.concat(lowerCaseCharacters);
     console.log(generator);
 }
-
+else if (yourPasswordLowerCaseCharacters === false && yourPasswordUpperCaseCharacters === false && yourPasswordNumericCharacters === false && yourPasswordSpecialCharacters === false) {
+    alert ('You must select at least one character type to generate your random password');
+}
 
 /** I want to create a function that utilizes the compiled generator array, as contextualized in the above if statements, 
  * to produce an output selected at random from 
@@ -67,6 +69,9 @@ if (yourPasswordLowerCaseCharacters === true) {
  * The for loop runs over the blocks of code located within its {}, all of which is located within the myFunction{}.
  * The for loop declares that the variable index begins at 0. The condition declares that the index will be less than the
  * value of yourPasswordLength, and that the index will continue to move through the array. 
+ * 
+ * The argument states that the password will be equal to the password, which is an empty string, plus the generator values, 
+ * selected at random from the full length of the generator. 
  * 
  * 
  */
@@ -78,3 +83,6 @@ if (yourPasswordLowerCaseCharacters === true) {
     
     myFunction()
     console.log(password);
+    
+}
+
