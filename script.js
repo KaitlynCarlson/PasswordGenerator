@@ -81,8 +81,18 @@ else if (yourPasswordLowerCaseCharacters === false && yourPasswordUpperCaseChara
         }
     }
     
+//This section calls on myFunction, grabs the input field with an id of 'display', and tells the browser to render the value
+//of password in the HTML input field
     myFunction()
-    console.log(password);
-    
+    document.getElementById('display').value = password;
 }
 
+
+// Copy to clipboard function
+    function copyPassword(){
+        var copy= document.getElementById('display');
+        copy.select();
+        copy.setSelectionRange(0, 99999); 
+        document.execCommand("copy");
+        alert("Copied the text: " + copy.value);
+    }
