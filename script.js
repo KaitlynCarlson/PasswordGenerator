@@ -6,14 +6,15 @@ function passwordGenerator(){
  and a maximum of 128 characters. */
 
 var yourPasswordLength = prompt('Your password can be between 8 and 128 characters. What length do you require?');
+   
 
-if (yourPasswordLength >= 8 && yourPasswordLength <= 128) {
-    alert(yourPasswordLength +  ' characters');
+for (var  i = yourPasswordLength; yourPasswordLength < 8 || yourPasswordLength > 128; yourPasswordLength = prompt('Your password can be between 8 and 128 characters. What length do you require?')){
+    alert('You have not met the password length criteria');
+    
+}
 
-}
-else if (yourPasswordLength < 8 || yourPasswordLength > 128) {
-    alert('Invalid. The password must be between 8 and 128 characters.');
-}
+alert(yourPasswordLength + " characters");
+
 
 // Prompting user to confirm the mixture of password characters
 
@@ -35,7 +36,7 @@ console.log(yourPasswordLowerCaseCharacters);
 var numericCharacters = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var lowerCaseCharacters = ["q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m"];
 var upperCaseCharacters = ["Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"];
-var specialCharacters = ["!", "@","#", "$"," %","^", "&","*", "_", "+"];
+var specialCharacters = ["!", "@","#", "$","%","^", "&","*", "_", "+"];
 var password = "";
 var generator = [];
 
