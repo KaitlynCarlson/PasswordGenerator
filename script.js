@@ -8,7 +8,7 @@ function passwordGenerator(){
 var yourPasswordLength = prompt('Your password can be between 8 and 128 characters. What length do you require?');
    
 
-for (var  i = yourPasswordLength; yourPasswordLength < 8 || yourPasswordLength > 128; yourPasswordLength = prompt('Your password can be between 8 and 128 characters. What length do you require?')){
+for (var  i = yourPasswordLength; !isNaN(yourPasswordLength) < 8 || !isNaN(yourPasswordLength) > 128 && !isNaN(yourPasswordLength); yourPasswordLength = prompt('Your password can be between 8 and 128 characters. What length do you require?')){
     alert('You have not met the password length criteria');
     
 }
