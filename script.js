@@ -6,16 +6,21 @@ function passwordGenerator(){
  and a maximum of 128 characters. */
 
 var yourPasswordLength = prompt('Your password can be between 8 and 128 characters. What length do you require?');
-   
 
 for (var  i = yourPasswordLength; yourPasswordLength < 8 || yourPasswordLength > 128; yourPasswordLength = prompt('Your password can be between 8 and 128 characters. What length do you require?')){
     alert('You have not met the password criteria');
 
 }
+
 while (yourPasswordLength !== parseInt(yourPasswordLength, 10).toString()) {
     alert("Please enter only numbers!");
     yourPasswordLength= prompt("Your password can be between 8 and 128 characters. What length do you require?");
+    for (var  i = yourPasswordLength; yourPasswordLength < 8 || yourPasswordLength > 128; yourPasswordLength = prompt('Your password can be between 8 and 128 characters. What length do you require?')){
+        alert('You have not met the password criteria');
+    
+    }
 }
+
 
 alert(yourPasswordLength + " characters");
 
