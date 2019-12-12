@@ -10,7 +10,7 @@ The purpose of this project is to generate a secure password for users. It accom
 
 In the case that a user is simply viewing the application, and not yet in need of a password, the generating code is not called upon until the "Generate" button is clicked by the user.
 
-![Home screen](../PasswordGenerator/Images/Homescreen.png)
+![Home screen](Images/Homescreen.png)
 
 When the user clicks the generate button they receive a series of alert messages from the browser that will establish and communicate the parameters of their desired password to the passwordGenerator() function. passwordGenerator() first prompts the user to establish their password length. 
 
