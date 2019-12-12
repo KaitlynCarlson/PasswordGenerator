@@ -14,33 +14,33 @@ In the case that a user is simply viewing the application, and not yet in need o
 
 When the user clicks the generate button they receive a series of alert messages from the browser that will establish and communicate the parameters of their desired password to the passwordGenerator() function. passwordGenerator() first prompts the user to establish their password length. 
 
-![Password length](../PasswordGenerator/Images/PasswordLength.png)
+![Password length](Images/PasswordLength.png)
 
 The user input is only accepted if it is a **number** between **8** and **128**. If user input does not match the criteria users are alerted that their input was invalid, and then prompted once again. 
 
-![User input was not a number](../PasswordGenerator/Images/InputNotANumber.png)
-![User input was not a whole number between 8 and 128](../PasswordGenerator/Images/InputNumberIssue.png)
+![User input was not a number](Images/InputNotANumber.png)
+![User input was not a whole number between 8 and 128](Images/InputNumberIssue.png)
 
 
 Once the user has entered an acceptable value, they are alerted their entered length. 
 
-![User entered character alert](../PasswordGenerator/Images/InputValid.png)
+![User entered character alert](Images/InputValid.png)
 
 Then the user is prompted through a series of alerts establishing their password criteria. There are 4 questions which will either includ or exclude _numeric characters_, _uppercase characters_, _lower case characters_, and _special characters_.
 
-![Numeric Characters Prompt](../PasswordGenerator/Images/NumericCharacters.png)
-![Uppercase Characters Prompt](../PasswordGenerator/Images/UpperCaseCharacters.png)
-![Lowercase Characters Prompt](../PasswordGenerator/Images/LowerCaseCharacters.png)
-![Special Characters Prompt](../PasswordGenerator/Images/SpecialCharacters.png)
+![Numeric Characters Prompt](Images/NumericCharacters.png)
+![Uppercase Characters Prompt](Images/UpperCaseCharacters.png)
+![Lowercase Characters Prompt](Images/LowerCaseCharacters.png)
+![Special Characters Prompt](Images/SpecialCharacters.png)
 
 Users must select at least one character in order to generate a password. If no character style is selected they are alerted by the browser. 
 
-![Character not selected prompt](../PasswordGenerator/Images/CharacterNotSelected.png)
+![Character not selected prompt](Images/CharacterNotSelected.png)
 
 Once the desired parameters are established the code then pulls together the relevant potential character options and randomly selects a set of characters that is equivalent in length to the user's entereed password length. The generated password then appears in the password field. 
 
-![Password Generated](../PasswordGenerator/Images/PasswordGenerated.png)
+![Password Generated](Images/PasswordGenerated.png)
 
 The generated password can be copied to a user's clipboard by clicking the "Copy to Clipboard" button. When the password is successfully copied to a clipboard the user is notified by the browser. 
 
-![Password Copied to Clipboard](../PasswordGenerator/Images/CopiedToClipboard.png)
+![Password Copied to Clipboard](Images/CopiedToClipboard.png)
