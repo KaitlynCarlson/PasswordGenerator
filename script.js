@@ -13,7 +13,7 @@ for (var  i = yourPasswordLength; yourPasswordLength < 8 || yourPasswordLength >
 }
 
 while (yourPasswordLength !== parseInt(yourPasswordLength, 10).toString()) {
-    alert("Please enter only numbers!");
+    alert("Invalid input: Not a number");
     yourPasswordLength= prompt("Your password can be between 8 and 128 characters. What length do you require?");
     for (var  i = yourPasswordLength; yourPasswordLength < 8 || yourPasswordLength > 128; yourPasswordLength = prompt('Your password can be between 8 and 128 characters. What length do you require?')){
         alert('You have not met the password criteria');
