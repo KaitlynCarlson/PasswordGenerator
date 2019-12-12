@@ -8,10 +8,15 @@ function passwordGenerator(){
 var yourPasswordLength = prompt('Your password can be between 8 and 128 characters. What length do you require?');
    
 
-for (var  i = yourPasswordLength; yourPasswordLength < 8 || yourPasswordLength > 128 && !isNaN(yourPasswordLength); yourPasswordLength = prompt('Your password can be between 8 and 128 characters. What length do you require?')){
-    alert('You have not met the password length criteria');
+for (var  i = yourPasswordLength; yourPasswordLength < 8 || yourPasswordLength > 128; yourPasswordLength = prompt('Your password can be between 8 and 128 characters. What length do you require?')){
+    alert('You have not met the password criteria');
 
 }
+while (yourPasswordLength !== parseInt(yourPasswordLength, 10).toString()) {
+    alert("Please enter only numbers!");
+    yourPasswordLength= prompt("Your password can be between 8 and 128 characters. What length do you require?");
+}
+
 alert(yourPasswordLength + " characters");
 
 
@@ -59,6 +64,7 @@ if (yourPasswordLowerCaseCharacters === true) {
 }
 else if (yourPasswordLowerCaseCharacters === false && yourPasswordUpperCaseCharacters === false && yourPasswordNumericCharacters === false && yourPasswordSpecialCharacters === false) {
     alert ('You must select at least one character type to generate your random password');
+    return;
 }
 
 /** I want to create a function that utilizes the compiled generator array, as contextualized in the above if statements, 
@@ -94,5 +100,5 @@ else if (yourPasswordLowerCaseCharacters === false && yourPasswordUpperCaseChara
         copy.select();
         copy.setSelectionRange(0, 99999); 
         document.execCommand("copy");
-        alert("Copied the text: " + copy.value);
+        alert("Copied: " + copy.value);
     }

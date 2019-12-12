@@ -4,7 +4,6 @@ body{
 .navbar{
    justify-content: flex-start;
    font-family: Courier New, monospace;
-   font-weight: bold;
     align-items: center;
     border-bottom: 5px solid #307986;
 }
@@ -20,9 +19,11 @@ body{
     width:100%;
     color:white;
     font-family: Courier New, monospace;
-    border-radius: 12%;
+    border-radius: %;
 }
+
 button{
     color:white;
     background-color:darkslategrey;
+    border-radius: 5%;
 }
